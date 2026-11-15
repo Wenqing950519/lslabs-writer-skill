@@ -1,6 +1,6 @@
 # PROVENANCE — lslabs-writer-skill
 
-- 版本：0.3.1｜2026-11-15
+- 版本：0.4.0｜2026-11-15
 - 安裝：以 junction 全域掛載至 `~/.claude/skills/lslabs-writer-skill`、`~/.codex/skills/lslabs-writer-skill`、`~/.gemini/skills/lslabs-writer-skill`、`~/.gemini/antigravity/skills/lslabs-writer-skill`，並寫入 `~/.gemini/config/skills.json` 與 `LS-Labs/.agents/skills/lslabs-editorial/SKILL.md`；單一正本保留於 `C:\Users\eason\Documents\skill\lslabs-writer-skill\`。
 
 ## 底稿與演進
@@ -44,3 +44,4 @@
 - 2026-11-14｜0.2.2｜依作者回饋區分證據嚴謹度：`research` 維持完整分母與 `〔待查〕` 底線；`growth`／`news` 等一般文章沿用具名公開論文與報告時可直接採用數據，無可靠出處或不必要細節則直接刪減
 - 2026-11-15｜0.3.0｜依作者回饋弱化證據邊界與防禦性寫作：裁決順序第一條縮為「事實不能寫錯」，分母、條件與限定詞不再優先於敘事；第二輪審稿改為只查數字、引述與歸屬是否寫錯，不再替文章補條件或把判斷改成「我們推測」；`references/lint.md` 放寬 G、I、J 組，新增 M 組（保留語氣疊加、重複的限制聲明、觀點前綴、預先辯護），並移除「限定詞不得刪」的保護；`references/voice.md`「判斷有條件」改為「判斷講清楚、講肯定」；待作者確認清單縮為三到五項。`research` 類仍須數字可回溯，限制集中寫在方法說明
 - 2026-11-15｜0.3.1｜依作者回饋再放寬：移除「刪減限定詞不得改變來源原意」的限制。來源自己下的保留不必照搬，作者可把相關解讀為因果、把個案解讀為趨勢並直述；只剩直接引述的原話與數字本身須與來源一致
+- 2026-11-15｜0.4.0｜併入作者提供的〈總編輯改稿補丁〉（2026-11-15）：第二輪由「審稿與局部除痕」改為「總編輯改稿與文字清理」，先做文章層級編輯（選材、開頭、資訊順序、篇幅主次、收尾與 CTA）再清句子，修改幅度跟著問題層級走；新增 `references/editorial.md`（只收正面做法，第一輪即可讀），補丁中「要避開」的項目改併入 `references/lint.md` L 組；裁決順序第一條加入「不補造親身經歷、訪談、客戶原話、實測與產品能力」；`references/casebook.md` 新增四張虛構的編輯前後對照卡（E1～E4）；`assets/used-log.md` 取消「近五篇開頭類型不得重複」，新增切角、讀者帶走的判斷、主要例子三欄；`references/voice.md` 補上「聲音來自取捨」。補丁中「保留影響原意的必要條件」未採用，維持 0.3.1 的放寬。補丁第 5 節的匿名對照評讀尚未執行
