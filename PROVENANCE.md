@@ -1,6 +1,6 @@
 # PROVENANCE — lslabs-writer-skill
 
-- 版本：0.2.2｜2026-11-14
+- 版本：0.3.0｜2026-11-15
 - 安裝：以 junction 全域掛載至 `~/.claude/skills/lslabs-writer-skill`、`~/.codex/skills/lslabs-writer-skill`、`~/.gemini/skills/lslabs-writer-skill`、`~/.gemini/antigravity/skills/lslabs-writer-skill`，並寫入 `~/.gemini/config/skills.json` 與 `LS-Labs/.agents/skills/lslabs-editorial/SKILL.md`；單一正本保留於 `C:\Users\eason\Documents\skill\lslabs-writer-skill\`。
 
 ## 底稿與演進
@@ -42,3 +42,4 @@
 - 2026-11-14｜0.2.0｜吸收 `editorial-pipeline` 並改為「第一輪總編自由成稿 → 第二輪審稿除痕」雙輪制，移除獨立的 `editorial-pipeline`
 - 2026-11-14｜0.2.1｜依作者回饋放寬 `references/lint.md` K 組與 `SKILL.md` 的冒號（`：`）約束：保留標題、小標與正常語義的冒號，僅針對「粗體標籤＋冒號」條列、戲劇化停頓冒號、「結論／結語：」前綴與單段過密堆疊做局部改寫；破折號仍原則上排除
 - 2026-11-14｜0.2.2｜依作者回饋區分證據嚴謹度：`research` 維持完整分母與 `〔待查〕` 底線；`growth`／`news` 等一般文章沿用具名公開論文與報告時可直接採用數據，無可靠出處或不必要細節則直接刪減
+- 2026-11-15｜0.3.0｜依作者回饋弱化證據邊界與防禦性寫作：裁決順序第一條縮為「事實不能寫錯」，分母、條件與限定詞不再優先於敘事；第二輪審稿改為只查數字、引述與歸屬是否寫錯，不再替文章補條件或把判斷改成「我們推測」；`references/lint.md` 放寬 G、I、J 組，新增 M 組（保留語氣疊加、重複的限制聲明、觀點前綴、預先辯護），並移除「限定詞不得刪」的保護；`references/voice.md`「判斷有條件」改為「判斷講清楚、講肯定」；待作者確認清單縮為三到五項。`research` 類仍須數字可回溯，限制集中寫在方法說明
